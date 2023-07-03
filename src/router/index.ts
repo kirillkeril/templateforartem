@@ -6,6 +6,11 @@ export enum RouterNames {
 
 const routes: Array<RouteRecordRaw> = [
     {
+        path:"/",
+        name: "home",
+
+    },
+    {
         path: '/:pathMatch(.*)*',
         name: RouterNames.NOT_FOUND,
         redirect: {
