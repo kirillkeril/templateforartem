@@ -1,12 +1,10 @@
 @import "./variables";
 @import "https://necolas.github.io/normalize.css/8.0.1/normalize.css";
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Rubik+Mono+One&display=swap');
 
 :root {
-  font-family: "Roboto", sans-serif;
-  color: $mainText;
+  font-family: 'Rubic Mono One', sans-serif;
 }
 a {
-  color: $mainText;
   text-decoration: none;
 }

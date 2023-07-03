@@ -7,7 +7,6 @@ import Uikit from "@/components/uikit";
 
 import {createPinia} from "pinia";
 
-
 // @ts-ignore
 const app = createApp(App);
 const pinia = createPinia();
