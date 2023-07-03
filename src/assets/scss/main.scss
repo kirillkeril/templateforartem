@@ -1,0 +1,12 @@
+@import "./variables";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "https://necolas.github.io/normalize.css/8.0.1/normalize.css";
+
+:root {
+  font-family: "Roboto", sans-serif;
+  color: $mainText;
+}
+a {
+  color: $mainText;
+  text-decoration: none;
+}
