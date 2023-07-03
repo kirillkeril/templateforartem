@@ -34,8 +34,21 @@ export default {
   grid-template-areas:"logo account"
     "search search";
   align-items: center;
-  margin: 40px;
+  padding: 0 10px;
 
+}
+@media (min-width: 800px) {
+  .header{
+    grid-template-columns: 250px auto 300px;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo search account";
+    padding: 0 20px;
+  }
+  .logo{
+    margin-right:40px;
+    font-size: 15px;
+
+  }
 }
 .logo{
   grid-area: logo;
@@ -48,6 +61,8 @@ export default {
 .search{
   grid-area: search;
   position: relative;
+
+
 }
 .icon{
   background: black;
@@ -55,12 +70,16 @@ export default {
   height: 10px;
   position: absolute;
   top:50%;
-  right: 1px;
+  right: 12px;
   transform: translateY(-50%);
 }
 .search1{
-width: 100%;
   border-radius: 10px;
+  height: 38px;
+  width: 99%;
+}
+.searchInput{
+
 }
 .loginButton{
   background: none;
@@ -68,7 +87,8 @@ width: 100%;
   font-family: "Rubik Mono One",sans-serif;
 }
 .logo {
-  font-family:  "Raleway",sans-serif;;
+  font-family:  "Rubik Mono One",sans-serif;;
+
 
 }
 .profile{
