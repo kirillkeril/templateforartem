@@ -1,13 +1,22 @@
 <template>
-
-
   <div class="categories-grid-container">
     <div class="categories-grid">
-      <input type="button" class="ff" >
-      <input type="button" class="ff" >
-      <input type="button" class="ff" >
+      <div class="ff-container">
+        <input type="button" class="ff"/>
+      </div>
+      <div class="ff-container">
+        <input type="button" class="ff"/>
+      </div>
+      <div class="ff-container">
+        <input type="button" class="ff"/>
+      </div>
+      <div class="ff-container">
+        <input type="button" class="ff"/>
+      </div>
+      <div class="ff-container">
+        <input type="button" class="ff"/>
+      </div>
     </div>
-
   </div>
 </template>
 
@@ -39,7 +48,7 @@ export default {
 }
 .ff{
   border: none;
-  border-radius: 40px;
+  border-radius: 48px;
   height: 225px;
   width: 326px;
   background: aqua;
@@ -57,6 +66,12 @@ export default {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
+@media (min-width: 1024px) {
+  .ff-container {
+    padding: 15px;
+    border: 3px solid black;
+    border-radius: 63px;
+  }
+}
 </style>
 
