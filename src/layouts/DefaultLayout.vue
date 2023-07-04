@@ -1,7 +1,7 @@
 <script setup>
 import Header from "@/components/Header.vue";
 import NavMenu from "@/components/NavMenu.vue";
-import CategiroesGrid from "@/components/uikit/CategiroesGrid.vue";
+import CategiroesGrid from "@/components/CategiroesGrid.vue";
 </script>
 
 <template>
