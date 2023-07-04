@@ -57,6 +57,12 @@ export default {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+@media (min-width:1024px) {
+  .ff{
+    border: 3px solid black;
+    padding: 15px;
+  }
 
+}
 </style>
 
