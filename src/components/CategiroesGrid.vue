@@ -19,15 +19,15 @@ export default {
 
 <style  scoped>
 .categories {
-  width: 100vw;
+
   grid-template-columns: 1fr;
   display: grid;
   justify-items: center;
+  grid-gap: 25px;
 }
 .ff{
   border: none;
   border-radius: 40px;
-  margin: 30px 20px;
   height: 225px;
   width: 326px;
   background: aqua;
