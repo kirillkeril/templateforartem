@@ -1,27 +1,16 @@
 <template>
   <div class="categories-grid-container">
     <div class="categories-grid">
-      <div class="ff-container">
-        <input type="button" class="ff"/>
-      </div>
-      <div class="ff-container">
-        <input type="button" class="ff"/>
-      </div>
-      <div class="ff-container">
-        <input type="button" class="ff"/>
-      </div>
-      <div class="ff-container">
-        <input type="button" class="ff"/>
-      </div>
-      <div class="ff-container">
-        <input type="button" class="ff"/>
-      </div>
+     <category-item>Рецепты</category-item>
     </div>
   </div>
 </template>
 
 <script>
+import CategoryItem from "@/components/CategoryItem.vue";
+
 export default {
+  components: {CategoryItem},
   setup() {
 
 
@@ -43,13 +32,8 @@ export default {
 
   grid-gap: 25px;
 }
-.ff{
-  border: none;
-  border-radius: 48px;
-  height: 225px;
-  width: 326px;
-  background: aqua;
-}
+
+
 
 @container (width > 777px) {
   .categories-grid {
@@ -61,11 +45,6 @@ export default {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (min-width:1024px) {
-  .ff{
-    border: 3px solid black;
-    padding: 15px;
-  }
-}
+
 </style>
 
