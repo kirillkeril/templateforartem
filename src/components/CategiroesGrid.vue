@@ -30,9 +30,6 @@ export default {
 }
 </script>
 
-
-
-
 <style scoped>
 .categories-grid-container {
   container-type: inline-size;
@@ -54,8 +51,6 @@ export default {
   background: aqua;
 }
 
-
-
 @container (width > 777px) {
   .categories-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -66,11 +61,10 @@ export default {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (min-width: 1024px) {
-  .ff-container {
-    padding: 15px;
+@media (min-width:1024px) {
+  .ff{
     border: 3px solid black;
-    border-radius: 63px;
+    padding: 15px;
   }
 }
 </style>
