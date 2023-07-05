@@ -1,3 +1,11 @@
+<script lang="ts" setup>
+import {Ref, ref} from "vue";
+import UiModal from "@/components/uikit/UiModal.vue";
+import RegisterForm from "@/components/RegisterForm.vue";
+
+const isModalOpened: Ref<boolean> = ref(true);
+</script>
+
 <template>
   <header class="header">
     <div class="logo">
@@ -10,21 +18,14 @@
       </div>
     </div>
     <div class="account">
-      <button class="loginButton">Войти</button>
+      <button class="loginButton" @click="isModalOpened = true">Войти</button>
+      <UiModal :isModalOpened="isModalOpened" @setActive="isModalOpened = false">
+        <RegisterForm/>
+      </UiModal>
       <button class="profile"></button>
     </div>
   </header>
 </template>
-
-<script>
-export default {
-  setup() {
-
-
-    return {}
-  }
-}
-</script>
 
 <style scoped>
 .header{

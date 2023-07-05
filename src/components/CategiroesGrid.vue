@@ -1,7 +1,12 @@
 <template>
   <div class="categories-grid-container">
     <div class="categories-grid">
-     <category-item>Рецепты</category-item>
+     <category-item>Категория</category-item>
+     <category-item>Категория</category-item>
+     <category-item>Категория</category-item>
+     <category-item>Категория</category-item>
+     <category-item>Категория</category-item>
+     <category-item>Категория</category-item>
     </div>
   </div>
 </template>
